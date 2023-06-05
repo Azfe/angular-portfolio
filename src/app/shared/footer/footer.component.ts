@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InfoPaginasService } from 'src/app/services/info-paginas.service';
 
 @Component({
   selector: 'app-footer',
@@ -9,7 +10,7 @@ export class FooterComponent {
 
   year: number = new Date().getFullYear();
 
-  constructor(){
+  constructor(public infoPageService: InfoPaginasService){
     
   }
 
