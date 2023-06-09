@@ -39,6 +39,5 @@ export class InfoPaginasService {
         this.equipo = resp;
         //console.log(resp);
       });
-
   }
 }

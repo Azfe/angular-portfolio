@@ -26,4 +26,8 @@ export class ProductosService {
         }, 2000);
       });
   }
+
+  getProducto(id: string){
+    return this.http.get(`https://angular-portfolio-azup-default-rtdb.europe-west1.firebasedatabase.app/productos/${id}.json`);
+  }
 }
